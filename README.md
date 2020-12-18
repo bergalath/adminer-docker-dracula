@@ -20,7 +20,6 @@ in docker-compose file :
       environment:
         - ADMINER_DESIGN=dracula
 
-### How to build and push
+### How to build and push to Docker Hub
 
-    docker build -t bergalath/adminer-dracula .
-    docker push bergalath/adminer-dracula
+    make push
