@@ -1,6 +1,11 @@
 
+.SILENT: # do not echo commands as we run them.
+
 build: ## Build the image
 	docker build -t bergalath/adminer-dracula .
+
+test: ## Test the image
+	docker run --rm -it --entrypoint sh bergalath/adminer-dracula
 
 push: build ## Push the image to docker hub
 	docker push bergalath/adminer-dracula
