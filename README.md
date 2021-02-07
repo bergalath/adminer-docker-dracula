@@ -2,17 +2,15 @@
 
 [Docker image](https://hub.docker.com/r/bergalath/adminer-dracula) for [Adminer](https://github.com/vrana/adminer) with [dracula theme](https://github.com/dracula/adminer), waiting for https://github.com/vrana/adminer/pull/394
 
-### How to use it
+## How to use it
 
-in terminal :
+**in terminal :**
 
-    docker run --rm -e ADMINER_DESIGN=dracula -p 8080:8080 bergalath/adminer-dracula:4.7.8
+    make up
 
-or
+open your browser : http://localhost:8080 (`username: postgres / password: password`)
 
-    make run
-
-in docker-compose file :
+**in docker-compose file :** (see [./docker-compose.yml](docker-compose.yml))
 
     adminer:
       image: bergalath/adminer-dracula:4.7.8
@@ -22,7 +20,7 @@ in docker-compose file :
       environment:
         - ADMINER_DESIGN=dracula
 
-### How to build and push the image to [Docker Hub](https://hub.docker.com/r/bergalath/adminer-dracula)
+## How to build and push the image to [Docker Hub](https://hub.docker.com/r/bergalath/adminer-dracula)
 
 Build the image
 
