@@ -8,7 +8,7 @@ services:
       POSTGRES_DB: dracula-theme
 
   adminer-dracula:
-    image: bergalath/adminer-dracula:4.7.8
+    image: bergalath/adminer-dracula:4.7.9
     depends_on:
       - db
     ports:
