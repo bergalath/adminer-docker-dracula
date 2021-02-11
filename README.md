@@ -13,7 +13,7 @@ open your browser : http://localhost:8080 (`username: postgres / password: passw
 **in docker-compose file :** (see [./docker-compose.yml](docker-compose.yml))
 
     adminer:
-      image: bergalath/adminer-dracula:4.7.9
+      image: bergalath/adminer-dracula:4.8.0
       restart: unless-stopped
       ports:
         - 8080:8080
