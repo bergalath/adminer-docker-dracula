@@ -4,10 +4,10 @@
 VERSION := 4.8.0-1
 
 build: ## Build the image
-	docker build -t bergalath/adminer-dracula:$(VERSION) .
+	docker build --no-cache --pull -t bergalath/adminer-dracula:$(VERSION) .
 
 up: ## Run the image with a pg image
-	docker-compose up -d adminer-dracula
+	docker-compose up
 
 run: ## Run inside the image
 	docker run --rm -it --entrypoint sh bergalath/adminer-dracula:$(VERSION)
