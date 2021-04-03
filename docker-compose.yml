@@ -12,7 +12,7 @@ services:
     restart: unless-stopped
 
   adminer-dracula:
-    image: bergalath/adminer-dracula:4.8.0-1
+    image: bergalath/adminer-dracula:4.8.0-2
     depends_on:
       - db
     ports:
