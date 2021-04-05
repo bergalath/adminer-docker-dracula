@@ -1,8 +1,16 @@
-# adminer-docker-dracula
+# adminer-dracula
 
-[Docker image](https://hub.docker.com/r/bergalath/adminer-dracula) for [Adminer](https://github.com/vrana/adminer) with [dracula theme](https://github.com/dracula/adminer) and [some fixes](https://github.com/bergalath/dracula-adminer-theme)
+[Docker image](https://hub.docker.com/r/bergalath/adminer-dracula) for [Adminer](https://github.com/vrana/adminer) with [dracula theme](https://github.com/dracula/adminer) and [some fixes](https://github.com/bergalath/dracula-adminer-theme), waiting for [this issue to be closed](https://github.com/dracula/adminer/issues/1#issuecomment-809944711)
 
-## How to use it
+## How to use/test the image
+
+1. Build the image
+
+        make build
+
+1. Have a look at it
+
+        make run
 
 **in terminal :**
 
@@ -93,19 +101,11 @@ open your browser : http://localhost:8080 (`username: postgres / password: passw
       environment:
         - ADMINER_DESIGN=dracula
 
-## How to update, build and push the image to [Docker Hub](https://hub.docker.com/r/bergalath/adminer-dracula)
+## How to update the image to [Docker Hub](https://hub.docker.com/r/bergalath/adminer-dracula)
 
 1. Update the version
 
         sed -i 's/4.6.5/4.6.6/' *
-
-1. Build the image
-
-        make build
-
-1. Have a look at it
-
-        make run
 
 1. Then push it
 
