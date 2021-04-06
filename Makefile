@@ -14,8 +14,8 @@ run: ## Run inside the image
 
 push: ## Push the image to docker hub
 	git add --all .
-	git commit -m 'Update to v$(VERSION)'
-	git tag v$(VERSION)
+	git commit -m 'Update to version $(VERSION)'
+	git tag $(VERSION)
 	git push origin
 	git push origin --tags
 # 	docker push bergalath/adminer-dracula:$(VERSION)
