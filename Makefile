@@ -1,7 +1,7 @@
 
 .SILENT: # do not echo commands as we run them.
 
-VERSION := 4.8.0-2
+VERSION := 4.8.0-3
 
 build: ## Build the image
 	docker build --no-cache --pull -t bergalath/adminer-dracula:$(VERSION) .
