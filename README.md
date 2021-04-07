@@ -6,14 +6,14 @@
 
 **in terminal :**
 
-    env ADMINER_DESIGN=dracula docker run --rm bergalath/adminer-dracula:4.8.0-4
+    env ADMINER_DESIGN=dracula docker run --rm bergalath/adminer-dracula:4.8.0-5
 
 open your browser : http://localhost:8080 (`username: postgres / password: password`)
 
 **in docker-compose file :** (see [./docker-compose.yml](docker-compose.yml))
 
     adminer:
-      image: bergalath/adminer-dracula:4.8.0-4
+      image: bergalath/adminer-dracula:4.8.0-5
       restart: unless-stopped
       ports:
         - 8080:8080
