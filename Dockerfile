@@ -1,4 +1,4 @@
-FROM adminer:4.8.0-standalone
+FROM adminer:4.8.1-standalone
 
 ADD --chown=adminer:adminer \
   https://github.com/bergalath/dracula-adminer-theme/raw/main/theme/adminer.css \

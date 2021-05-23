@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=4.8.0-5
+VERSION=4.8.1
 
 git add --all .
 git commit -m "Update to v$VERSION"
